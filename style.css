@@ -1,0 +1,295 @@
+@font-face{
+	font-family: Roboto;
+	src: url("fonts/RobotoMono-Medium.ttf");
+    font-size:24px
+}
+
+@font-face{
+    font-family: Rlight;
+    src:url("fonts/RobotoMono-Light.ttf");
+}
+
+@font-face {
+    font-family: Rbold;
+    src: url("fonts/RobotoMono-Bold.ttf");
+}
+
+body{
+    background-color: #FFEFE8;
+    font-family: Rlight;
+    color:#8B4513
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+}
+
+#logo {
+    border: solid 0px red;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    height:40px;
+   
+}
+
+#logo img {
+    max-width: 25px; 
+    height: 25px; 
+}
+
+#logo span {
+    font-family: Rbold;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.container {
+    border: solid 0px red;
+    background-color: #DDC8C0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+.item {
+    margin-right: 50px; 
+}
+
+a {
+    text-decoration: none; 
+    color: #8B4513;
+}
+
+a:hover {
+    text-decoration: underline; 
+    color: #8B4513; 
+    
+}
+
+a:focus {
+    text-decoration: underline;
+    color:#fff;
+}
+
+a.current-page {
+    color: #8B4513;
+    font-family: Roboto; 
+    text-decoration: underline;
+}
+
+.mainarea {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 80vh; 
+    width: 100%; 
+    padding:40px 0 0;
+    font-family: Roboto;
+}
+
+.left-area {
+    color:#A17866;
+    flex: 3; 
+    border: solid 0px red;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+.right-area {
+    height:80vh;
+    color:white;
+    flex: 4; 
+    padding: 50px 50px 50px 50px;
+    box-sizing: border-box; 
+    border-radius: 25px;
+    overflow: hidden; 
+    position: relative;
+    justify-content:center;
+    align-items:center;
+    text-align:left;
+  background: #DDC8C0;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.right-area h2{
+    text-align: center;
+    font-family: Roboto;
+}
+.right-area img{
+    width:100%;
+    height:auto;
+    text-align: center;
+}
+.right-area:hover {
+  background-color: #A17866;
+  cursor: pointer;
+}
+
+
+#scrollable-content {
+    width: 100%; 
+    overflow: auto; 
+    height: 100%; 
+}
+
+footer {
+    font-family: Roboto;
+    background-color: #FFEFE8;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #A17866;
+    padding: 0px;
+    font-size: x-small;
+    border: solid 0px red;
+}
+
+#socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#socialMedia a {
+    left:5px;
+    margin: 5px 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#socialMedia img {
+    left:5px;
+    top:5px;
+    width: 15px;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px; 
+}
+
+.trickarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 15px 15px 15px 15px;
+    border: solid 0px red;
+}
+
+.trick {
+    color: #A17866;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 25px;
+    box-sizing: border-box;
+    display: flex;
+    margin: 0 0 20px;
+    text-align: center;
+    justify-content:center;
+    transition: background-color 2s ease-out;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 30px 50px 30px 50px;
+    font-size:small;
+}
+
+.trick:hover {
+    background-color: #DDC8C0;
+    transform: scale(1.1); 
+    transition: transform 0.3s;
+}
+.trick-content {
+    display: block;
+}
+.trick img{
+    height:100%;
+    width:auto;
+}
+.trick h2{
+    font-family:Roboto;
+}
+.text{
+    display: block;
+    text-align: left;
+    padding:10px 20px;
+}
+@media only screen and (max-width: 600px) {
+    .mainarea {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        height: 80vh; 
+        width: 100%; 
+    }
+    .left-area {
+        font-size: 13px;
+        align-items:center;
+        height:50vh;
+    }
+    .right-area {
+        margin: 10px; 
+        font-size:13px;
+    }
+    .trick-content {
+        display: none;
+    }
+
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+    .mainarea{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        height: 80vh; 
+        width: 100%; 
+    }
+    .text {
+        display: none;
+    }
+    .trick {
+        display: flex;
+        align-items: center; 
+    }
+    
+    .trick img {
+        align-items: flex-start;
+        margin-right: 20px; 
+    }
+    
+    .trick h2 {
+        padding:0 50px;
+        font-family: Roboto;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
